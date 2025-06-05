@@ -72,7 +72,7 @@
 				<div
 					class="bg-violet-900/70 rounded-lg w-[95%] sm:w-[500px] max-h-[95%] p-5 shadow-lg shadow-violet-900/50 border-2 border-violet-900 overflow-y-auto"
 				>
-					<h1 id="title" class="inline text-[#a89ac4] items-center justify-center"></h1>
+					<h1 id="title" class="inline text-[#a89ac4]"></h1>
 					<div class="hidden" data-hidden>
 						<div class="grid grid-cols-2 gap-2 mt-3">
 							<button
@@ -134,7 +134,7 @@
 			})
 
 			new Typed('#title', {
-				strings: ['Welcome to <h2 class="inline text-xl text-white">States of Somewhere!</h2><br/>Join us!'],
+				strings: ['Welcome to <h2 class="inline text-xl text-white items-center justify-center">States of Somewhere!</h2><br/>Join us!'],
 				typeSpeed: 25,
 				startDelay: 1000,
 				loop: false,
@@ -152,8 +152,8 @@
 				emitters: {
 					direction: 'top',
 					size: {
-						width: 100,
-						height: 0,
+						width: 1000,
+						height: 200,
 					},
 					position: {
 						x: 50,
@@ -169,23 +169,23 @@
 						value: 0,
 						density: {
 							enable: true,
-							value_area: 2000,
+							value_area: 500,
 						},
 					},
 					color: {
 						value: '#ffffff',
 					},
 					opacity: {
-						value: 0.1,
+						value: 0.05,
 						anim: {
 							enable: true,
 							speed: 3,
-							opacity_min: 0.05,
+							opacity_min: 0.02,
 							sync: false,
 						},
 					},
 					size: {
-						value: 100,
+						value: 50,
 					},
 					move: {
 						enable: true,
