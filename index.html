@@ -15,7 +15,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title>{name} | Realms.in.th</title>
+		<title>States of Somewhere SMP</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -67,7 +67,7 @@
 				<img
 					src="https://ucarecdn.com/6d1d4e08-1d88-48ff-a83d-3e231f08c102/realmslogo.png"
 					alt="Logo"
-					class="w-64 mb-5 animate-[heartbeat_3s_ease-in-out_infinite] rounded"
+					class="w-64 mb-15 animate-[heartbeat_3s_ease-in-out_infinite] rounded"
 				/>
 				<div
 					class="bg-violet-900/70 rounded-lg w-[95%] sm:w-[500px] max-h-[95%] p-5 shadow-lg shadow-violet-900/50 border-2 border-violet-900 overflow-y-auto"
@@ -80,10 +80,10 @@
 								type="button"
 								class="col-span-2 text-center text-lg w-full p-1.5 rounded-md bg-violet-500 select-none active:scale-95 transition-transform"
 							>
-								ผู้เล่นออนไลน์ {online} คน
-								<p class="text-xs">{ip_server}</p>
+								Click to copy the IP!
+								<p class="text-xs">somewhere.mc.in.th:24752</p>
 							</button>
-							<a
+							<!--- <a
 								class="text-center text-lg w-full p-1.5 rounded-md bg-[#5662f6] select-none active:scale-95 transition-transform"
 								href="https://discord.com"
 								target="_blank"
@@ -96,7 +96,7 @@
 								target="_blank"
 								rel="noreferrer"
 								>Facebook
-							</a>
+							</a>-->
 						</div>
 					</div>
 				</div>
@@ -105,14 +105,14 @@
 
 		<footer class="fixed left-0 bottom-0 p-[0.7vw] select-none">
 			<p class="text-[0.7vw] opacity-25">
-				© 2022
+				© 2025
 				<a
 					class="hover:text-violet-400 transition-colors"
 					href="https://realms.in.th"
 					target="_blank"
 					rel="noreferrer"
 					>Realms</a
-				>. All Rights Reserved.
+				>, T.Songtalay. All Rights Reserved.
 			</p>
 		</footer>
 
@@ -124,17 +124,17 @@
 				event.preventDefault()
 				const textElement = $(event.target).find('p')
 
-				if (textElement.text() !== 'คัดลอกเสร็จสิ้น!') {
-					await navigator.clipboard.writeText('{ip_server}')
-					textElement.text('คัดลอกเสร็จสิ้น!')
+				if (textElement.text() !== 'Copied!') {
+					await navigator.clipboard.writeText('somewhere.mc.in.th:24752')
+					textElement.text('Copied!')
 					setTimeout(() => {
-						textElement.text('{ip_server}')
+						textElement.text('somewhere.mc.in.th:24752')
 					}, 1500)
 				}
 			})
 
 			new Typed('#title', {
-				strings: ['ยินดีต้อนรับสู่ <h2 class="inline text-xl text-white">{name}</h2><br/>มาสนุกด้วยกันสิ ~~'],
+				strings: ['Welcome to <h2 class="inline text-xl text-white">States of Somewhere!</h2><br/>Join us!'],
 				typeSpeed: 25,
 				startDelay: 1000,
 				loop: false,
@@ -176,7 +176,7 @@
 						value: '#ffffff',
 					},
 					opacity: {
-						value: 1,
+						value: 0.2,
 						anim: {
 							enable: true,
 							speed: 3,
@@ -185,11 +185,11 @@
 						},
 					},
 					size: {
-						value: 1,
+						value: 10,
 					},
 					move: {
 						enable: true,
-						speed: 5,
+						speed: 1,
 						direction: 'none',
 						random: false,
 						straight: false,
