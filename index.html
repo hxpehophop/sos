@@ -59,7 +59,7 @@
 	</head>
 
 	<body
-		class="bg-[url('https://i.pinimg.com/originals/80/2f/30/802f3028e80f10665d23831a6dac2268.jpg')] bg-no-repeat bg-cover bg-center bg-fixed text-violet-50"
+		class="bg-[url('https://i.pinimg.com/originals/80/2f/30/802f3028e80f10665d23831a6dac2268.jpg')] bg-no-repeat bg-cover bg-center bg-fixed text-violet-50 data-speed='6'"
 	>
 		<section class="w-full h-screen backdrop-blur-sm bg-black/30">
 			<div id="tsparticles"></div>
@@ -72,7 +72,7 @@
 				<div
 					class="bg-violet-900/70 rounded-lg w-[95%] sm:w-[500px] max-h-[95%] p-5 shadow-lg shadow-violet-900/50 border-2 border-violet-900 overflow-y-auto"
 				>
-					<h1 id="title" class="inline text-[#a89ac4]"></h1>
+					<h1 id="title" class="inline text-[#a89ac4] text-center"></h1>
 					<div class="hidden" data-hidden>
 						<div class="grid grid-cols-2 gap-2 mt-3">
 							<button
@@ -104,15 +104,14 @@
 								href="https://docs.google.com/document/d/1Vw-jJE4gmrSG7PUuneqH5AU607eTPuEZTmYfFMiMDRw/edit?usp=sharing"
 								target="_blank"
 								rel="noreferrer"
-								>Laws and Rules
-								<p class="text-xs">กฎและข้อตกลง โปรดอ่าน (กราบละ)</p>
+								>Google Drive
 							</a>
 							<a
 								class="text-center text-lg w-full p-1.5 rounded-md bg-[#2374e1] select-none active:scale-95 transition-transform"
 								href="https://facebook.com"
 								target="_blank"
 								rel="noreferrer"
-								>Whitelist Form
+								>Modrinth
 							</a>
 						</div>
 					</div>
@@ -214,6 +213,18 @@
 					},
 				},
 			})
+		</script>
+		<script>
+			let container = document.querySelector('.container');
+			container.onmousemove = (e) =>{
+				container.querySelectorAll('.parallax').forEach(parallax =>{
+				let speed = parallax.getAttribute('data-speed');
+				let x = (window.innerWidth - e.pageX * speed) / 50;
+				let y = (window.innerHeight - e.pageY * speed) / 50;
+				parallax.style.transform = `translateX(${x}px) translateY(${y}px)`;
+				container.style.backgroundPosition = `${x}% ${y}%`;
+			});
+		};
 		</script>
 	</body>
 </html>
