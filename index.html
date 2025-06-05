@@ -55,187 +55,162 @@
 					}
 				}
 			}
-			.container {
-				background-size: cover;
-				background-position: center;
-				position: relative;
-				min-height: 100vh;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				overflow: hidden;
-				z-index: 0;
-			}
 		</style>
 	</head>
 
-	<body>
-		<div class="container bg-[url('https://i.pinimg.com/originals/80/2f/30/802f3028e80f10665d23831a6dac2268.jpg')] bg-no-repeat bg-cover bg-center bg-fixed text-violet-50 data-speed='6'">
-			<section class="w-full h-screen backdrop-blur-sm bg-black/30">
-				<div id="tsparticles"></div>
-				<div class="flex flex-col h-screen justify-center items-center p-5">
-					<img
-						src="https://ucarecdn.com/6d1d4e08-1d88-48ff-a83d-3e231f08c102/realmslogo.png"
-						alt="Logo"
-						class="w-64 mb-10 animate-[heartbeat_3s_ease-in-out_infinite] rounded"
-					/>
-					<div
-						class="bg-violet-900/70 rounded-lg w-[95%] sm:w-[500px] max-h-[95%] p-5 shadow-lg shadow-violet-900/50 border-2 border-violet-900 overflow-y-auto"
-					>
-						<h1 id="title" class="inline text-[#a89ac4] text-center"></h1>
-						<div class="hidden" data-hidden>
-							<div class="grid grid-cols-2 gap-2 mt-3">
-								<button
-									id="copy-button"
-									type="button"
-									class="col-span-2 text-center text-lg w-full p-1.5 rounded-md bg-violet-500 select-none active:scale-95 transition-transform"
-								>
-									Click to copy the IP!
-									<p class="text-xs">somewhere.mc.in.th:24752</p>
-								</button>
-								<a
-									class="text-center text-lg w-full p-1.5 rounded-md bg-[#e33650] select-none active:scale-95 transition-transform"
-									href="https://docs.google.com/document/d/1Vw-jJE4gmrSG7PUuneqH5AU607eTPuEZTmYfFMiMDRw/edit?usp=sharing"
-									target="_blank"
-									rel="noreferrer"
-									>Laws and Rules
-									<p class="text-xs">กฎและข้อตกลง โปรดอ่าน (กราบละ)</p>
-								</a>
-								<a
-									class="text-center text-lg w-full p-1.5 rounded-md bg-[#2374e1] select-none active:scale-95 transition-transform"
-									href="https://facebook.com"
-									target="_blank"
-									rel="noreferrer"
-									>Whitelist Form
-								</a>
-								<h1 class="inline text-[#a89ac4] col-span-2 text-center text-lg w-full p-1.5 rounded-md transition-transform ">STEP 2: MODS & Resource Packs</h1>
-								<a
-									class="text-center text-lg w-full p-1.5 rounded-md bg-[#37d567] select-none active:scale-95 transition-transform"
-									href="https://docs.google.com/document/d/1Vw-jJE4gmrSG7PUuneqH5AU607eTPuEZTmYfFMiMDRw/edit?usp=sharing"
-									target="_blank"
-									rel="noreferrer"
-									>Google Drive
-								</a>
-								<a
-									class="text-center text-lg w-full p-1.5 rounded-md bg-[#37d567] select-none active:scale-95 transition-transform"
-									href="https://facebook.com"
-									target="_blank"
-									rel="noreferrer"
-									>Modrinth
-								</a>
-							</div>
+	<body class="container bg-[url('https://i.pinimg.com/originals/80/2f/30/802f3028e80f10665d23831a6dac2268.jpg')] bg-no-repeat bg-cover bg-center bg-fixed text-violet-50">
+		<section class="w-full h-screen backdrop-blur-sm bg-black/30">
+			<div id="tsparticles"></div>
+			<div class="flex flex-col h-screen justify-center items-center p-5">
+				<img
+					src="https://ucarecdn.com/6d1d4e08-1d88-48ff-a83d-3e231f08c102/realmslogo.png"
+					alt="Logo"
+					class="w-64 mb-10 animate-[heartbeat_3s_ease-in-out_infinite] rounded"
+				/>
+				<div
+					class="bg-violet-900/70 rounded-lg w-[95%] sm:w-[500px] max-h-[95%] p-5 shadow-lg shadow-violet-900/50 border-2 border-violet-900 overflow-y-auto"
+				>
+					<h1 id="title" class="inline text-[#a89ac4] text-center"></h1>
+					<div class="hidden" data-hidden>
+						<div class="grid grid-cols-2 gap-2 mt-3">
+							<button
+								id="copy-button"
+								type="button"
+								class="col-span-2 text-center text-lg w-full p-1.5 rounded-md bg-violet-500 select-none active:scale-95 transition-transform"
+							>
+								Click to copy the IP!
+								<p class="text-xs">somewhere.mc.in.th:24752</p>
+							</button>
+							<a
+								class="text-center text-lg w-full p-1.5 rounded-md bg-[#e33650] select-none active:scale-95 transition-transform"
+								href="https://docs.google.com/document/d/1Vw-jJE4gmrSG7PUuneqH5AU607eTPuEZTmYfFMiMDRw/edit?usp=sharing"
+								target="_blank"
+								rel="noreferrer"
+								>Laws and Rules
+								<p class="text-xs">กฎและข้อตกลง โปรดอ่าน (กราบละ)</p>
+							</a>
+							<a
+								class="text-center text-lg w-full p-1.5 rounded-md bg-[#2374e1] select-none active:scale-95 transition-transform"
+								href="https://facebook.com"
+								target="_blank"
+								rel="noreferrer"
+								>Whitelist Form
+							</a>
+							<h1 class="inline text-[#a89ac4] col-span-2 text-center text-lg w-full p-1.5 rounded-md transition-transform ">STEP 2: MODS & Resource Packs</h1>
+							<a
+								class="text-center text-lg w-full p-1.5 rounded-md bg-[#37d567] select-none active:scale-95 transition-transform"
+								href="https://docs.google.com/document/d/1Vw-jJE4gmrSG7PUuneqH5AU607eTPuEZTmYfFMiMDRw/edit?usp=sharing"
+								target="_blank"
+								rel="noreferrer"
+								>Google Drive
+							</a>
+							<a
+								class="text-center text-lg w-full p-1.5 rounded-md bg-[#37d567] select-none active:scale-95 transition-transform"
+								href="https://facebook.com"
+								target="_blank"
+								rel="noreferrer"
+								>Modrinth
+							</a>
 						</div>
 					</div>
 				</div>
-			</section>
-	
-			<footer class="fixed left-0 bottom-0 p-[0.7vw] select-none">
-				<p class="text-[0.7vw] opacity-25">
-					© 2025
-					<a
-						class="hover:text-violet-400 transition-colors"
-						href="https://realms.in.th"
-						target="_blank"
-						rel="noreferrer"
-						>Realms</a
-					>, T.Songtalay. All Rights Reserved.
-				</p>
-			</footer>
-	
-			<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1"></script>
-			<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-			<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.5.3/tsparticles.bundle.min.js"></script>
-			<script>
-				$('#copy-button').on('click', async event => {
-					event.preventDefault()
-					const textElement = $(event.target).find('p')
-	
-					if (textElement.text() !== 'Copied!') {
-						await navigator.clipboard.writeText('somewhere.mc.in.th:24752')
-						textElement.text('Copied!')
-						setTimeout(() => {
-							textElement.text('somewhere.mc.in.th:24752')
-						}, 1500)
-					}
-				})
-	
-				new Typed('#title', {
-					strings: ['Welcome to <h2 class="inline text-xl text-white">States of Somewhere!</h2><br/>Join us!'],
-					typeSpeed: 25,
-					startDelay: 1000,
-					loop: false,
-					onComplete: self => {
-						self.cursor.remove()
-						$('[data-hidden]').fadeIn('slow', function () {
-							$(this).removeAttr('class')
-							$(this).removeAttr('style')
-							$(this).removeAttr('data-hidden')
-						})
+			</div>
+		</section>
+
+		<footer class="fixed left-0 bottom-0 p-[0.7vw] select-none">
+			<p class="text-[0.7vw] opacity-25">
+				© 2025
+				<a
+					class="hover:text-violet-400 transition-colors"
+					href="https://realms.in.th"
+					target="_blank"
+					rel="noreferrer"
+					>Realms</a
+				>, T.Songtalay. All Rights Reserved.
+			</p>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1"></script>
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+		<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.5.3/tsparticles.bundle.min.js"></script>
+		<script>
+			$('#copy-button').on('click', async event => {
+				event.preventDefault()
+				const textElement = $(event.target).find('p')
+
+				if (textElement.text() !== 'Copied!') {
+					await navigator.clipboard.writeText('somewhere.mc.in.th:24752')
+					textElement.text('Copied!')
+					setTimeout(() => {
+						textElement.text('somewhere.mc.in.th:24752')
+					}, 1500)
+				}
+			})
+
+			new Typed('#title', {
+				strings: ['Welcome to <h2 class="inline text-xl text-white">States of Somewhere!</h2><br/>Join us!'],
+				typeSpeed: 25,
+				startDelay: 1000,
+				loop: false,
+				onComplete: self => {
+					self.cursor.remove()
+					$('[data-hidden]').fadeIn('slow', function () {
+						$(this).removeAttr('class')
+						$(this).removeAttr('style')
+						$(this).removeAttr('data-hidden')
+					})
+				},
+			})
+
+			tsParticles.load('tsparticles', {
+				emitters: {
+					direction: 'top',
+					size: {
+						width: 600,
+						height: 200,
 					},
-				})
-	
-				tsParticles.load('tsparticles', {
-					emitters: {
-						direction: 'top',
-						size: {
-							width: 600,
-							height: 200,
-						},
-						position: {
-							x: 50,
-							y: 100,
-						},
-						rate: {
-							delay: 0.2,
-							quantity: 1,
-						},
+					position: {
+						x: 50,
+						y: 100,
 					},
-					particles: {
-						number: {
-							value: 0,
-							density: {
-								enable: true,
-								value_area: 500,
-							},
-						},
-						color: {
-							value: '#ffffff',
-						},
-						opacity: {
-							value: 0.05,
-							anim: {
-								enable: true,
-								speed: 3,
-								opacity_min: 0.02,
-								sync: false,
-							},
-						},
-						size: {
-							value: 50,
-						},
-						move: {
+					rate: {
+						delay: 0.2,
+						quantity: 1,
+					},
+				},
+				particles: {
+					number: {
+						value: 0,
+						density: {
 							enable: true,
-							speed: 1,
-							direction: 'none',
-							random: false,
-							straight: false,
-							out_mode: 'destroy',
+							value_area: 500,
 						},
 					},
-				})
-			</script>
-			<script>
-				let container = document.querySelector('.container');
-				container.onmousemove = (e) =>{
-					container.querySelectorAll('.parallax').forEach(parallax =>{
-					let speed = parallax.getAttribute('data-speed');
-					let x = (window.innerWidth - e.pageX * speed) / 50;
-					let y = (window.innerHeight - e.pageY * speed) / 50;
-					parallax.style.transform = `translateX(${x}px) translateY(${y}px)`;
-					container.style.backgroundPosition = `${x}% ${y}%`;
-				});
-			};
-			</script>
-		</div>
+					color: {
+						value: '#ffffff',
+					},
+					opacity: {
+						value: 0.05,
+						anim: {
+							enable: true,
+							speed: 3,
+							opacity_min: 0.02,
+							sync: false,
+						},
+					},
+					size: {
+						value: 50,
+					},
+					move: {
+						enable: true,
+						speed: 1,
+						direction: 'none',
+						random: false,
+						straight: false,
+						out_mode: 'destroy',
+					},
+				},
+			})
+		</script>
 	</body>
 </html>
