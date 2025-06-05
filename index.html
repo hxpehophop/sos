@@ -1,0 +1,249 @@
+<!--- 
+    ตัวแปรการใช้งาน Webpage มีดังนี้
+       # Cached ประมาณ 30วินาที
+       {name} = ชื่อเซิร์ฟเวอร์
+       {online} = จะแสดงผู้เล่นออนไลน์อยู่
+       {status} = สถานะเซิร์ฟเวอร์ Online / Offline
+       {ip_server} = ไอพีเซิร์ฟ
+       {url} = ลิงก์ Webpage
+       {author} = Email เจ้าของเซิร์ฟเวอร์
+       หากต้องการอะไรเพิ่มเติม บอกแอดมินได้เลยนะ ที่ติดต่อเรา
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{name} | Realms.in.th</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://ucarecdn.com/dad4bb95-e094-46d2-b3b5-ab66f985ef67/realmsfavicon.png"
+      type="image/png"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ["Prompt", "sans-serif"],
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer components {
+        ::-webkit-scrollbar {
+          display: none;
+        }
+      }
+
+      @layer utilities {
+        @keyframes heartbeat {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.05);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-[url('bg-1.png')] bg-no-repeat bg-cover bg-center bg-fixed text-violet-50"
+  >
+    <section class="w-full h-screen backdrop-blur-sm bg-black/30">
+      <div id="tsparticles"></div>
+      <div class="flex flex-col h-screen justify-center items-center p-5">
+				<img
+					src="https://ucarecdn.com/6d1d4e08-1d88-48ff-a83d-3e231f08c102/realmslogo.png"
+					alt="Logo"
+					class="w-64 mb-10 animate-[heartbeat_3s_ease-in-out_infinite] rounded"
+				/>
+				<div
+					class="bg-orange-950/70 rounded-lg w-[95%] sm:w-[500px] max-h-[95%] p-5 shadow-lg shadow-orange-950/50 border-2 border-orange-950/70 overflow-y-auto"
+				>
+					<h1 id="title" class="inline text-yellow-300 text-center font-bold"></h1>
+					<div class="hidden" data-hidden>
+						<div class="grid grid-cols-12 gap-2 mt-3">
+							<button
+								id="copy-button"
+								type="button"
+								class="col-span-12 text-center text-lg w-full p-1.5 rounded-md bg-orange-600/75 hover:bg-orange-600/100 select-none active:scale-95 transition-opacity"
+							>
+								Click to copy the IP!
+								<p class="text-xs">somewhere.mc.in.th:24752</p>
+							</button>
+							<a
+								class="col-span-6 text-center text-lg w-full p-1.5 rounded-md select-none bg-[#e33650]/75 hover:bg-[#e33650]/100 transition-opacity"
+								href="https://docs.google.com/document/d/1Vw-jJE4gmrSG7PUuneqH5AU607eTPuEZTmYfFMiMDRw/edit?usp=sharing"
+								target="_blank"
+								rel="noreferrer"
+								>Laws and Rules
+								<p class="text-xs">กฎและข้อตกลง โปรดอ่าน (กราบละ)</p>
+							</a>
+
+							<!--- Whitelist Form -->
+							<a
+								class="col-span-6 flex items-center justify-center gap-2 text-lg w-full p-1.5 rounded-md select-none bg-[#2374e1]/75 hover:bg-[#2374e1]/100 transition-opacity"
+								href="https://docs.google.com/document/d/1Vw-jJE4gmrSG7PUuneqH5AU607eTPuEZTmYfFMiMDRw/edit?usp=sharing"
+								target="_blank"
+								rel="noreferrer">
+								Whitelist Form
+							</a>
+
+							<!--- STEP 2 -->
+							<h1 class="inline text-white col-span-12 text-center font-bold text-lg w-full mt-3 rounded-md">Mods & Resource Packs</h1>
+							<h3 class="inline text-yellow-300 opacity-80 col-span-12 text-center text-sm w-full rounded-md">เลือก Modrinth เพื่อโหลดไฟล์รวมเป็นไฟล์เดียว
+								<span class="bg-yellow-950/40 px-1 rounded-md">(.mrpack)</span>
+							แล้ว Import เข้า Modrinth เพื่อเล่น หรือจะเลือก Google Drive แล้วโหลดไฟล์แยกไปใส่เองก็ได้นะค้าบ (ไม่มีเล่นไม่ได้นะ)</h3>
+							
+							<!--- Modrinth -->
+							<a
+								class="col-span-5 flex items-center justify-center gap-2 text-lg w-full p-1.5 rounded-md select-none bg-[#0ca862]/75 hover:bg-[#0ca862]/100 transition-opacity"
+								href="https://docs.google.com/document/d/1Vw-jJE4gmrSG7PUuneqH5AU607eTPuEZTmYfFMiMDRw/edit?usp=sharing"
+								target="_blank"
+								rel="noreferrer">
+								<img src="modrinth_icon.svg" alt="Modrinth" class="w-5 h-5" /><span>Modrinth</span>
+							</a>
+
+							<div class="col-span-2 text-center my-2 text-gray-300 font-light">or</div>
+
+							<!--- Drive -->
+							<a
+								class="col-span-5 flex items-center justify-center gap-2 text-[#1fbf77] text-lg w-full p-1.5 rounded-md select-none border-2 border-[#1fbf77] opacity-70 hover:opacity-100 transition-opacity"
+								href="https://docs.google.com/document/d/1Vw-jJE4gmrSG7PUuneqH5AU607eTPuEZTmYfFMiMDRw/edit?usp=sharing"
+								target="_blank"
+								rel="noreferrer">
+								<img src="drive_icon.svg" alt="G.Drive" class="w-5 h-5" /><span>Google Drive</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	<footer class="fixed left-0 bottom-0 w-full flex justify-between items-end px-[0.7vw] py-[0.4vw] text-[0.7vw] select-none">
+	<!-- Left-aligned -->
+	<p class="opacity-25">
+		© 2025
+		<a
+		class="hover:text-yellow-300 transition-colors"
+		href="https://realms.in.th"
+		target="_blank"
+		rel="noreferrer"
+		>
+		Realms
+		</a>,
+		T.Songtalay. All Rights Reserved.
+	</p>
+
+	<!-- Right-aligned -->
+	<div class="opacity-100 flex gap-2">
+		<a href="https://www.discord.com" class="hover:opacity-100 transition-opacity">
+			<img src="discord_icon.svg" alt="Discord" class="w-10 h-10 opacity-30 hover:opacity-70" />
+		</a>
+		<a href="https://www.discord.com" class="hover:opacity-100 transition-opacity">
+			<img src="suggestion_icon.svg" alt="Suggest" class="w-10 h-10 opacity-30 hover:opacity-70" />
+		</a>
+	</div>
+	</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1"></script>
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+		<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.5.3/tsparticles.bundle.min.js"></script>
+		<script>
+			$('#copy-button').on('click', async event => {
+				event.preventDefault()
+				const textElement = $(event.target).find('p')
+
+				if (textElement.text() !== 'Copied!') {
+					await navigator.clipboard.writeText('somewhere.mc.in.th:24752')
+					textElement.text('Copied!')
+					setTimeout(() => {
+						textElement.text('somewhere.mc.in.th:24752')
+					}, 1500)
+				}
+			})
+
+			new Typed('#title', {
+				strings: ['<span class="text-2xl">Welcome to <h2 class="inline text-white">States of Somewhere!</h2></span>'],
+				typeSpeed: 40,
+				startDelay: 750,
+				loop: false,
+				cursorChar: '<span class="text-2xl">|</span>',
+				onComplete: self => {
+					self.cursor.remove()
+					$('[data-hidden]').fadeIn('slow', function () {
+						$(this).removeAttr('class')
+						$(this).removeAttr('style')
+						$(this).removeAttr('data-hidden')
+					})
+				},
+			})
+
+			tsParticles.load('tsparticles', {
+				emitters: {
+					direction: 'top',
+					size: {
+						width: 600,
+						height: 200,
+					},
+					position: {
+						x: 50,
+						y: 100,
+					},
+					rate: {
+						delay: 0.2,
+						quantity: 1,
+					},
+				},
+				particles: {
+					number: {
+						value: 0,
+						density: {
+							enable: true,
+							value_area: 500,
+						},
+					},
+					color: {
+						value: '#ffffff',
+					},
+					opacity: {
+						value: 0.08,
+						anim: {
+							enable: true,
+							speed: 0.07,
+							opacity_min: 0.02,
+							sync: false,
+						},
+					},
+					size: {
+						value: 50,
+					},
+					move: {
+						enable: true,
+						speed: 1,
+						direction: 'none',
+						random: false,
+						straight: false,
+						out_mode: 'destroy',
+					},
+				},
+			})
+		</script>
+  </body>
+</html>
