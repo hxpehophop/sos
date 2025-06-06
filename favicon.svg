@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 72.58 103.68">
+  <!-- Generator: Adobe Illustrator 29.5.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 137)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #fff;
+      }
+
+      .st1 {
+        fill: red;
+      }
+    </style>
+  </defs>
+  <rect class="st1" x="20.74" y="82.94" width="10.37" height="10.37"/>
+  <rect class="st1" x="31.1" y="82.94" width="10.37" height="10.37"/>
+  <rect class="st1" x="31.1" y="93.31" width="10.37" height="10.37"/>
+  <rect class="st1" x="41.47" y="82.94" width="10.37" height="10.37"/>
+  <rect class="st1" x="31.1" y="72.58" width="10.37" height="10.37"/>
+  <rect class="st1" x="31.1" y="62.21" width="10.37" height="10.37"/>
+  <rect class="st1" x="41.47" y="51.84" width="10.37" height="10.37"/>
+  <rect class="st1" x="31.1" y="51.84" width="10.37" height="10.37"/>
+  <rect class="st0" x="20.74" y="20.74" width="31.1" height="31.1"/>
+  <rect class="st1" x="20.74" y="51.84" width="10.37" height="10.37"/>
+  <rect class="st1" x="31.1" y="10.37" width="10.37" height="10.37"/>
+  <rect class="st1" x="31.1" y="0" width="10.37" height="10.37"/>
+  <polygon class="st1" points="10.37 10.37 0 10.37 0 72.58 10.37 72.58 10.37 82.94 31.1 82.94 31.1 62.21 20.74 62.21 20.74 20.74 31.1 20.74 31.1 0 10.37 0 10.37 10.37"/>
+  <polygon class="st1" points="62.21 10.37 72.58 10.37 72.58 72.58 62.21 72.58 62.21 82.94 41.47 82.94 41.47 62.21 51.84 62.21 51.84 20.74 41.47 20.74 41.47 0 62.21 0 62.21 10.37"/>
+</svg>
