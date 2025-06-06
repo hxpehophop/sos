@@ -1,66 +1,36 @@
-<!--- 
-    ตัวแปรการใช้งาน Webpage มีดังนี้
-       # Cached ประมาณ 30วินาที
-       {name} = ชื่อเซิร์ฟเวอร์
-       {online} = จะแสดงผู้เล่นออนไลน์อยู่
-       {status} = สถานะเซิร์ฟเวอร์ Online / Offline
-       {ip_server} = ไอพีเซิร์ฟ
-       {url} = ลิงก์ Webpage
-       {author} = Email เจ้าของเซิร์ฟเวอร์
-       หากต้องการอะไรเพิ่มเติม บอกแอดมินได้เลยนะ ที่ติดต่อเรา
--->
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>States of Somewhere</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>States of Somewhere</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="shortcut icon"
-      href="https://ucarecdn.com/dad4bb95-e094-46d2-b3b5-ab66f985ef67/realmsfavicon.png"
-      type="image/png"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          fontFamily: {
-            sans: ["Prompt", "sans-serif"],
-          },
-        },
-      };
-    </script>
-    <style type="text/tailwindcss">
-      @layer components {
-        ::-webkit-scrollbar {
-          display: none;
-        }
-      }
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Major+Mono+Display&family=Noto+Sans+Thai:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
-      @layer utilities {
-        @keyframes heartbeat {
-          0% {
-            transform: scale(1);
-          }
-          50% {
-            transform: scale(1.05);
-          }
-          100% {
-            transform: scale(1);
-          }
-        }
-      }
-    </style>
-  </head>
+	<link href="style.css" rel="stylesheet" />
+
+	<!-- Favicon -->
+	<link
+		rel="shortcut icon"
+		href="favicon.svg"
+		type="image/svg"
+	/>
+
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+		theme: {
+			fontFamily: {
+			sans: ["Noto Sans Thai", "sans-serif"],
+			},
+		},
+		};
+	</script>
+	</head>
 
   <body
     class="bg-[url('bg-1.png')] bg-no-repeat bg-cover bg-center bg-fixed text-violet-50"
@@ -69,9 +39,9 @@
       <div id="tsparticles"></div>
       <div class="flex flex-col h-screen justify-center items-center p-5">
 				<img
-					src="https://ucarecdn.com/6d1d4e08-1d88-48ff-a83d-3e231f08c102/realmslogo.png"
+					src="sos_icon.svg"
 					alt="Logo"
-					class="w-64 mb-10 animate-[heartbeat_3s_ease-in-out_infinite] rounded"
+					class="w-96 mb-5 animate-[heartbeat_3s_ease-in-out_infinite] rounded drop-shadow-lg"
 				/>
 				<div
 					class="bg-orange-950/70 rounded-lg w-[95%] sm:w-[500px] max-h-[95%] p-5 shadow-lg shadow-orange-950/50 border-2 border-orange-950/70 overflow-y-auto"
@@ -113,7 +83,7 @@
 							
 							<!--- Modrinth -->
 							<a
-								class="col-span-5 flex items-center justify-center gap-2 text-lg w-full p-1.5 rounded-md select-none bg-[#0ca862]/75 hover:bg-[#0ca862]/100 transition-bg-opacity"
+								class="col-span-5 flex items-center justify-center gap-2 text-lg w-full p-1.5 rounded-md select-none bg-[#0ca862]/75 hover:bg-[#0ca862]/100 transition-opacity"
 								href="https://docs.google.com/document/d/1Vw-jJE4gmrSG7PUuneqH5AU607eTPuEZTmYfFMiMDRw/edit?usp=sharing"
 								target="_blank"
 								rel="noreferrer">
@@ -139,7 +109,7 @@
 	<footer class="fixed left-0 bottom-0 w-full flex justify-between items-end px-[0.7vw] py-[0.4vw] text-[0.7vw] select-none">
 	<!-- Left-aligned -->
 	<p class="opacity-25">
-		Copyright © 2025
+		© 2025
 		<a
 		class="hover:text-yellow-300 transition-colors"
 		href="https://realms.in.th"
